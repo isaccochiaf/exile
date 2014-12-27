@@ -31,10 +31,14 @@
       <script src="js/modernizr.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
       
       <script src="js/jquery.js"></script>
-      <script src="http://ricostacruz.com/jquery.transit/jquery.transit.js"></script>
+       <script src="js/jquery.waypoints.js"></script>
+      
       <link rel="stylesheet" href="css/font-awesome.min.css">
+       <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/style.css">    
       <link rel="stylesheet" href="css/media-query.css">
       <link href="video-js/video-js.css" rel="stylesheet">
@@ -43,6 +47,8 @@
         .vjs-default-skin .vjs-play-progress,
           .vjs-default-skin .vjs-volume-level { background-color: #D3CFA5 }
         .vjs-default-skin .vjs-control-bar { font-size: 81% }
+          .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden; }
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
       </style>
     
   <script>
@@ -55,6 +61,41 @@
     }if (height  < 200){
         $( "#testa" ).fadeIn("slow");
     }
+});
+      
+      $(document).ready(function() {
+
+	$('.punto1').waypoint(function() {
+		$('.wp1').addClass('animated fadeInLeft');
+	}, {
+		offset: '75%'
+	});
+	$('.wp2').waypoint(function() {
+		$('.wp2').addClass('animated fadeInLeft');
+	}, {
+		offset: '75%'
+	});
+	$('.wp3').waypoint(function() {
+		$('.wp3').addClass('animated fadeInRight');
+	}, {
+		offset: '55%'
+	});
+	$('.wp4').waypoint(function() {
+		$('.wp4').addClass('animated fadeInDown');
+	}, {
+		offset: '75%'
+	});
+	$('.wp5').waypoint(function() {
+		$('.wp5').addClass('animated fadeInUp');
+	}, {
+		offset: '75%'
+	});
+	$('.wp6').waypoint(function() {
+		$('.wp6').addClass('animated fadeInDown');
+	}, {
+		offset: '75%'
+	});
+
 });
       
       </script>
@@ -72,7 +113,7 @@
             
                     
                           
-            <div class="header">
+            <div class="header sand">
                 <div class="small-4 columns">
                 <img id="testa" src="img/header01.jpg">
                     </div>
@@ -80,15 +121,32 @@
                 <img  src="img/header02.jpg">
             </div>
                 </div>
+        
+         
 
-                    
-
-       <div class="row">
+        
+        
+      
+       <div class="header sand">
+           <div class="row">
           <br /> <br /><br />
           <div class="medium-8 medium-centered columns">
               </div>
+              </div>
            </div>
-      
+      <div class="header sand"> 
+        <div class="row">
+           
+          <div class="medium-10 medium-centered columns introduction">
+              <center><img src="img/divider.png"> </center>
+              <br />
+              Quando ventitre anni fa Bachir accettò, come tutti i suoi commilitoni dell’Esercito di Liberazione Popolare Saharawi (ELPS), di riporre in un cassetto le armi e porre fine a una guerra ventennale contro il Marocco per la liberazione del Sahara Occidentale lo fece non senza qualche dubbio.
+              <br /><br />
+              <center><img src="img/divider.png"> </center>
+              <br /><br />
+              </div>
+           </div>
+        </div>
       
       <div class="row" id="first-chapter">
           
@@ -101,8 +159,8 @@
               </div>
           <br /> <br /><br />
           </div>
-                    <div class="row">
-                <img src="img/pic_01.jpg">
+                    <div class="row punto1">
+                <img class="wp1" src="img/pic_01.jpg">
             </div>
               
           
@@ -113,8 +171,24 @@
                 
               
               <p> 
-Ma dal 1991, l’anno del cessate il fuoco voluto dalle Nazioni Unite per poter dare il là alla realizzazione di un referendum per l’indipendenza di questa parte di deserto, nulla, davvero nulla, è cambiato per la popolazione Saharawi. I figli di Bachir sono nati in quegli stessi campi profughi nei quali la sua generazione è stata costretta a fuggire per scappare dalla guerra. Tende, case di mattoni di sabbia, in una delle aree più inospitali di tutto il Maghreb. Nel sud dell’Algeria, tra Tindouf e il confine con la Mauritania. Un luogo che è un deserto piatto e pietroso, freddo d’inverno e soffocante d’estate, spesso sferzato da un forte vento che riempie gli occhi, la bocca e le case di sabbia. Qui, tra capre costrette a mangiare la plastica perché non hanno altro a disposizione e un tasso di disoccupazione che cresce di anno in anno, la popolazione Saharawi, composta da circa 170 mila persone, si trova ancora costretta a vivere senza un futuro, senza prospettive. </p>
-                  <div class="inciso">Esercito di Liberazione Popolare Saharawi da parte dei vertici del governo del Fronte Polisari</div>
+Ma dal 1991, l’anno del cessate il fuoco voluto dalle Nazioni Unite per poter dare il là alla realizzazione di un referendum per l’indipendenza di questa parte di deserto, nulla, davvero nulla, è cambiato per la popolazione Saharawi. I figli di Bachir sono nati in quegli stessi campi profughi nei quali la sua generazione è stata costretta a fuggire per scappare dalla guerra. Tende, case di mattoni di sabbia, in una delle aree più inospitali di tutto il Maghreb. Nel sud dell’Algeria, tra Tindouf e il confine con la Mauritania. Un luogo che è un deserto piatto e pietroso, freddo d’inverno e soffocante d’estate, spesso sferzato da un forte vento che riempie gli occhi, la bocca e le case di sabbia.  </p>
+              </div>
+          </div>
+        
+            <div class="header"> 
+                <div class="row">
+               
+              <div class="medium-10 medium-centered columns introduction wp4">
+                 
+                  Qui, tra capre costrette a mangiare la plastica perché non hanno altro a disposizione e un tasso di disoccupazione che cresce di anno in anno, la popolazione Saharawi, composta da circa 170 mila persone, si trova ancora costretta a vivere senza un futuro, senza prospettive.
+                    
+                  </div>
+                    
+               </div>
+            </div>
+        <div class="row">
+          <br />
+          <div class="medium-8 medium-centered columns">
                 <br /><br /><br /> <p> Il fallimento della comunità internazionale che in 23 anni non è riuscita, nonostante una missione, la Minurso (United Nations Mission for the Referendum in Western Sahara), creata appositamente per questo, a dare vita a un referendum, è sotto gli occhi di tutti. Anche dei Saharawi che ora, a 40 anni dall’inizio del loro esilio, si chiedono se valga la pena ancora aspettare o se invece non sia il caso di imbracciare di nuovo i fucili per riprendersi quello che, a loro detta e a detta della Corte Internazionale di Giustizia gli appartiene. 
               
                 </p>
@@ -123,10 +197,10 @@ Ma dal 1991, l’anno del cessate il fuoco voluto dalle Nazioni Unite per poter 
           </div>
                     <div class="row">
                  <div class="medium-6 columns">       
-                <img src="img/pic_02.jpg">
+                <img class="wp2" src="img/pic_02.jpg">
             </div>
               <div class="medium-6 columns">       
-                <img src="img/pic_03.jpg">
+                <img class="wp3" src="img/pic_03.jpg">
             </div>
                         </div>
               
@@ -198,7 +272,24 @@ L’insofferenza, l’impazienza, la si respira girando tra i campi profughi. La
            <div class="medium-8 medium-centered columns">
                <br /><br /><br /><br /><br /><br /><br /><br />
                     <p>
-La popolazione Saharawi dipende oramai da decenni dagli aiuti umanitari. Cibo, medicine, vestiti, tutto giunge fin qui nei campi con container provenienti dai quattro angoli del mondo. Ma vuoi per la crisi economica che ha colpito l’Occidente negli ultimi anni, vuoi per l’esplosione di focolai di guerra e quindi di situazioni di emergenza in altre regioni, basti pensare alla Siria, vuoi per il fatto che questa crisi, la crisi del Sahara Occidentale e della popolazione Saharawi, si protrae da quattro decenni, gli aiuti umanitari negli ultimi anni sono crollati. 
+La popolazione Saharawi dipende oramai da decenni dagli aiuti umanitari. Cibo, medicine, vestiti, tutto giunge fin qui nei campi con container provenienti dai quattro angoli del mondo. Ma vuoi per la crisi economica che ha colpito l’Occidente negli ultimi anni, vuoi per l’esplosione di focolai di guerra e quindi di situazioni di emergenza in altre regioni, basti pensare alla Siria, vuoi per il fatto che questa crisi, la crisi del Sahara Occidentale e della popolazione Saharawi, si protrae da quattro decenni, gli aiuti umanitari negli ultimi anni sono crollati.</p> 
+               </div>
+           </div>
+                        
+                        <div class="header"> 
+                <div class="row">
+               
+              <div class="medium-10 medium-centered columns introduction wp4">
+                 
+                  Qui, tra capre costrette a mangiare la plastica perché non hanno altro a disposizione e un tasso di disoccupazione che cresce di anno in anno, la popolazione Saharawi, composta da circa 170 mila persone, si trova ancora costretta a vivere senza un futuro, senza prospettive.
+                    <br /><br />
+                  </div>
+                    
+               </div>
+            </div>
+                 <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <p>
 “Negli ultimi quattro anni le donazioni e l’impegno della comunità internazionale si sono ridotti di molto – racconta Brahim Mojtar, ministro della Cooperazione  - Possiamo dire che sono crollati vertiginosamente e sono diminuiti del 70%. Questo ovviamente per una popolazione come quella Saharawi è un danno enorme perché dipendiamo in tutto e per tutto dagli aiuti umanitari. Basterebbero 8 milioni di euro all’anno per sfamare tutti, una cifra irrisoria che però facciamo fatica a racimolare. Ma il vero rischio per noi non è morire di fame, il vero rischio per noi è finire nel dimenticatoio. Una crisi così lunga, un conflitto che si protrae per così tanto tempo, porta inevitabilmente a un minore interesse della comunità internazionale nei confronti della nostra causa e delle nostre sofferenze, e questo è proprio quello che vuole il Marocco. Ed è per questo che noi, come Fronte Polisario e come saharawi, non possiamo più rischiare di aspettare invano e non possiamo più vedere i nostri amici, i nostri parenti, che vivono nei territori occupati al di là del muro marocchino”.
 
 
@@ -219,7 +310,7 @@ La popolazione Saharawi dipende oramai da decenni dagli aiuti umanitari. Cibo, m
       
       
         <div class="header">
-                <img src="img/wall_of_shame.jpg">         
+                <img src="img/wall.jpg">         
             </div>
 
         <div class="row">
@@ -243,8 +334,10 @@ Tra queste migliaia di ordigni inesplosi e cluster bombs che ogni anno feriscono
            </div>
       </div>    
         
-         <div class="header">
-                <img src="img/landmines.jpg">         
+         <div class="row">
+             <div class="medium-10 medium-centered columns wp5">
+                <img src="img/landmines_graph.jpg"> 
+                 </div>
             </div>
         
            <div class="row">
@@ -255,6 +348,12 @@ Nei territori “occupati”, quindi formalmente in territorio marocchino, la co
 Nel corso della guerra sono scomparsi nel nulla, dai territori sotto il controllo marocchino, circa 1500 saharawi, molti di loro, quasi quattrocento, mancano ancora all’appello. Ma le sparizioni di attivisti non sono una cosa del passato. Associazioni come Afapredesa (Asociación de Familiares de Presos y Desaparecidos Saharauis) denunciano nuove e continue sparizioni nel nulla di attivisti, manifestanti, giovani e meno giovani. Molti provano a scappare e a superare il muro che divide il Marocco dal Sahara Occidentale sotto il controllo del Fronte Polisario, ma in pochi ce la fanno perché il controllo dell’esercito marocchino è rigido e l’area densa di pericoli, in primis le mine. Nonostante le denunce e gli appelli di numerose ong e associazioni che invitano la comunità internazionale a prendere provvedimenti nei confronti del Marocco per le violazioni dei diritti umani, la missione Minurso è una delle poche al mondo che non ha alcun potere nell’ambito del controllo del rispetto dei diritti umani.   </p>
            </div>
       </div>    
+        
+         <div class="row">
+             <div class="medium-8 medium-centered columns wp6">
+                <img src="img/landmine_top.jpg"> 
+                 </div>
+            </div>
       
       <!------------------------------------------------------------  video   -->
                     
