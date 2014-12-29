@@ -2660,21 +2660,24 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: archive;
+  font-family: 'Playfair Display', serif;
   
-  font-style: normal;
-  color: #3a3a3a;
+  
+  color: #2D2D2D;
   text-rendering: optimizeLegibility;
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.4; }
+  margin-top: -2.5rem;
+  margin-bottom: 1.7rem;
+  line-height: 1.4em; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    font-size: 60%;
-    color: #6f6f6f;
-    line-height: 0; }
+    font-size: 45%;
+    color: #898989;
+    line-height: 0.9em; 
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom:0;
+    }
 
 h1 {
-  font-size: 2.125rem; }
+  font-size: 2.256rem; }
 
 h2 {
   font-size: 1.6875rem; }
@@ -2840,7 +2843,7 @@ blockquote p {
     line-height: 1.4; }
 
   h1 {
-    font-size: 2.75rem; }
+    font-size: 4.75rem; }
 
   h2 {
     font-size: 2.3125rem; }

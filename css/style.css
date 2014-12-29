@@ -1,9 +1,6 @@
  html, body{width:100%; height:100%; margin:0; }
 
-@font-face{
-font-family: novecento;
-src: url(../font/Novecentowide-Light.otf);
-}
+
 
 body {background-color:#fff}
 
@@ -26,123 +23,17 @@ button:focus {
 
 
 
-/*-------------------------------------SLIDER--------*/
-.firstcharacter { float: left; color: #000; font-size: 60px; line-height: 80px; padding-top: 0px; margin-right: 20px; padding-left: 3px; font-family: 'Oswald', sans-serif; font-weight:700;   }
-
 
 /*-------------------------------------MAP--------*/
 
 
-     
-
-
-@font-face
-{
-font-family: archive;
-src: url(../font/Archive.otf);
-}
-
-.quotation-mark{ font-family: archive; font-size:50px; color:#282828 }
-.quotation-mark em{ color:#c0392b; font-style:normal; }
+.centered{text-align:center; padding:1em}
 
 /*-------------------------------------PARALLAX--------*/     
 
 
 
 
-.parallax{ padding-top: 35%;
-            width: 100%;
-            float: right;
-            margin-left: 0;
-            margin-right: 0;
-            clear: none;
-            overflow: visible ;
-            overflow-x: visible;
-            overflow-y: visible;
-          
-              }
-   
-#parallax-01{ background:url(http://isaccochiaf.me/tomato_dark_side/img/ch_01_parallax.jpg);  
-    
-              background-attachment: fixed !important;
-            -webkit-background-size: cover !important;
-            -moz-background-size: cover !important;
-            -o-background-size: cover !important;
-            background-size: cover !important;
-           
-            
-              }
-          
-#parallax-02{ background-image:url(http://isaccochiaf.me/tomato_dark_side/img/ch_02_parallax.jpg); 
-     background-attachment: fixed !important;
-            -webkit-background-size: cover !important;
-            -moz-background-size: cover !important;
-            -o-background-size: cover !important;
-            background-size: cover !important;
-            
-              }
-
-#parallax-03{ background-image:url(http://isaccochiaf.me/tomato_dark_side/img/ch_03_parallax.jpg); 
-            background-attachment:fixed !important;
-            -webkit-background-size: cover !important;
-            -moz-background-size: cover !important;
-            -o-background-size: cover !important;
-            background-size: cover !important;
-           
-              }
-
-#parallax-04{ background:url(../img/ch_04_parallax.jpg) ; 
-    background-attachment:fixed !important;
-             -webkit-background-size: cover !important;
-            -moz-background-size: cover !important;
-            -o-background-size: cover !important;
-            background-size: cover !important;
-              }
-          
-          .overlay {position: relative;}
-
-.overlay q {font-size:25px;
-            text-align:center;
-            letter-spacing:3px;
-            line-height:25px;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: 0;
-    font-weight:100;
-            color:#fff;
-            padding-top: 9em;
-            padding-left:9em;
-            padding-right:9em;
-            background-color:rgba(60,60,60,0.5);
-            
-            font-family:quattrocento;
-            
-            -webkit-transition: all 2s;
-            -moz-transition: all 2s;
-            -o-transition: all 2s;
-            transition: all 2s;
-            -webkit-filter: opacity(1);
-            opacity:1;
-            }
-
-
-          
-  .cont:hover .overlay q { padding-top:11em; -webkit-filter: opacity(0); opacity:0;}   
-          
-      .cont { }    
-          
-/*-------------------------------------COVERS--------*/     
-
-.bg-01{ height:100%;
-        width:100%;
-        background-color:#000;
-        padding:100px;
-        text-align:center;
-        color:#FFF}
-          
 
           
 /*-------------------------------------Interactive Div--------
@@ -156,21 +47,10 @@ src: url(../font/Archive.otf);
     margin-left:8%;
 }*/ 
 
-#block{
-	width:150px;
-	height: 5px; 
-	background-color:#c0392b;
-   margin-top:20px;
-    margin-left:5%;
-}
 
 
-#title {letter-spacing:7px;}
-#title strong {color: #c0392b}
 
-#small-text { font-size:110%; color:#999; line-height:0}
-#small-text-name { font-size:1em; color:#999;}
-          
+
           
 input[type=range] {
     -webkit-appearance: none;
@@ -230,150 +110,16 @@ input[type="range"]::-webkit-slider-thumb {
 /*____________________Typorgaphy________________*/
 
 
-.head-introduction {
-    font-size:120%;
-   color:#2F2F2F;
-    letter-spacing:0.3em
-}
-
-.head-location {
-    color:#999;
-    font-size:100%;
-    line-height:0px;
-}
-
-.full-page {
-    height:100%;
-    padding-top:18%;
-    
-}
-
-.graph-caption {
-    margin-top:30px;
-}
-
-.graph-caption p {
-    font-size:100%;
-    color:#999
-}
 
 
 
 
-.img-quote {
-    font-family:quattrocento;
-    font-size:110%;
-    
-   color:#999;
-    line-height:26px;
-    
-}
- .img-quote p{ font-size:14px; font-style:normal; color:#c0392b;}
-
-footer{ background-color:#333}
-
-footer p {
-    font-size:13px;
-    color:#999;
-    padding:10px 0 10px 0
-    
-            } 
-
-#copyright-year {
-    background-color:#999
-}
 
 
 
-video {
-    width:100%;
-    position:absolute;
-    z-index:0
-    
-}
-
-.over-video {
-    position:absolute;
-    color: white;
-    z-index:100;
-    margin-top:22.5%;
-    margin-left:40%;
-    
-}
-.over-video p{
-    font-family:quattrocento;
-    background-color:#fff;
-    color:#c0392b;
-    font-size:30px;
-    padding:18px;
-
-}
 
 
 
-.tabs dd a{margin-right:auto; margin-left:auto;}
-
-.tabs dd a.tabs_a {
-    width:150px;
-    height:150px;
-    background-image:url(../img/t_tomato_hover.jpg);
-    background-repeat:no-repeat;
-   
-}
- .tabs dd.active a.tabs_a{
-    width:150px;
-    height:150px;
-    background-image:url(../img/t_tomato.jpg);
-    background-repeat:no-repeat;
-    
-}
-
-.tabs dd a.tabs_b {
-    width:150px;
-    height:150px;
-    background-image:url(../img/t_can_hover.jpg);
-    background-repeat:no-repeat;
-    
-}
- .tabs dd.active a.tabs_b {
-    width:150px;
-    height:150px;
-    background-image:url(../img/t_can.jpg);
-    background-repeat:no-repeat;
-   
-}
-
-.tabs dd a.tabs_c {
-    width:150px;
-    height:150px;
-    background-image:url(../img/t_market_hover.jpg);
-    background-repeat:no-repeat;
-    
-}
- .tabs dd.active a.tabs_c {
-    width:150px;
-    height:150px;
-    background-image:url(../img/t_market.jpg);
-    background-repeat:no-repeat;
-    
-}
-
-.tabs dd a.tabs_d {
-    width:150px;
-    height:150px;
-    background-image:url(../img/t_hand_hover.jpg);
-    background-repeat:no-repeat;
-    
-}
- .tabs dd.active a.tabs_d {
-    width:150px;
-    height:150px;
-    background-image:url(../img/t_hand.jpg);
-    background-repeat:no-repeat;
-    
-}
-
-.tabs-content h4 {color:#c0392b}
 
 
 
@@ -493,9 +239,9 @@ video {
     z-index:1000;
     
     font-family: 'Varela Round', sans-serif;
-    padding:1.5em;
-    text-align:center;
-    color:#5B5B5B;
+    
+   
+    color:#8E8E8E;
     letter-spacing:0.2em;
     line-height:1.5em;
     font-size:0.95em;
@@ -504,4 +250,36 @@ video {
 
 .sand {
     background-color:#F9F7E4;
+}
+
+.didascalia {
+    font-family: 'Varela Round', sans-serif;
+    padding:1.5em;
+    color:#5B5B5B;
+    letter-spacing:0.2em;
+    line-height:1.5em;
+    font-size:0.70em;
+    
+}
+
+.head {
+    height:370px;
+    margin-top:20%;
+}
+
+.blue {
+    color:#066481;
+}
+
+h3 small em{font-style:normal; color:#3A3A3A}
+
+.gallery {
+    background-color:#DDDDDD;
+    padding: 3em 0;
+    
+}
+
+.punto1 {
+    z-index:1000;
+    position:relative;
 }
