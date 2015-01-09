@@ -1,340 +1,401 @@
 <!doctype html>
 <html class="no-js" lang="en">
-      <head>
 
-      <!--[if lt IE 9]>
+<head>
+
+    <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
     <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
     <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
     <![endif]-->
 
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>40 years exile</title>
-      <meta name="Title" content="L'esilio Dimenticato" />
-      <meta name="og:title" content="L'esilio Dimenticato" />
-      <meta name="description" content=" Una crisi dimenticata, un conflitto sul punto di riesplodere, il 2015 per la popolazione Saharawi e il Sahara Occidentale può essere un anno cruciale" />
-      <meta name="og:description" content=" Una crisi dimenticata, un conflitto sul punto di riesplodere, il 2015 per la popolazione Saharawi e il Sahara Occidentale può essere un anno cruciale" />
-      <meta name="og:image" content="" />
-      <link rel="image_src" href="" />
-      <meta name="keywords" content="">
-      <meta name="robots" content="index,follow">
-      <link rel="stylesheet" href="css/foundation.css" />
-      <script src="js/modernizr.js"></script>
-      <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
-      <script src="js/jquery.js"></script>
-      <script src="js/jquery.waypoints.js"></script>
-      <link rel="stylesheet" href="css/animate.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/media-query.css">
-      <link href="video-js/video-js.css" rel="stylesheet">
-      <script src="video-js/video.js"></script>
-      <style type="text/css">
-.vjs-default-skin .vjs-play-progress,  .vjs-default-skin .vjs-volume-level {
-	background-color: #046380
-}
-.vjs-default-skin .vjs-control-bar {
-	font-size: 81%
-}
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9, .wp10, .wp11 {
-	visibility: hidden;
-}
-.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight {
-	visibility: visible;
-}
-</style>
-      <script>
-      
-      $(window).scroll(function() {
-    var height = $(window).scrollTop();
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>40 years exile</title>
+    <meta name="Title" content="L'esilio Dimenticato" />
+    <meta name="og:title" content="L'esilio Dimenticato" />
+    <meta name="description" content=" Una crisi dimenticata, un conflitto sul punto di riesplodere, il 2015 per la popolazione Saharawi e il Sahara Occidentale può essere un anno cruciale" />
+    <meta name="og:description" content=" Una crisi dimenticata, un conflitto sul punto di riesplodere, il 2015 per la popolazione Saharawi e il Sahara Occidentale può essere un anno cruciale" />
+    <meta name="og:image" content="" />
+    <link rel="image_src" href="" />
+    <meta name="keywords" content="">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link href="video-js/video-js.css" rel="stylesheet">
+    <script src="video-js/video.js"></script>
+    <style type="text/css">
+        .vjs-default-skin .vjs-play-progress,
+        .vjs-default-skin .vjs-volume-level {
+            background-color: #046380
+        }
+        .vjs-default-skin .vjs-control-bar {
+            font-size: 81%
+        }
+        .wp1,
+        .wp2,
+        .wp3,
+        .wp4,
+        .wp5,
+        .wp6,
+        .wp7,
+        .wp8,
+        .wp9,
+        .wp10,
+        .wp11 {
+            visibility: hidden;
+        }
+        .bounceInLeft,
+        .bounceInRight,
+        .fadeInUp,
+        .fadeInUpDelay,
+        .fadeInDown,
+        .fadeInUpD,
+        .fadeInLeft,
+        .fadeInRight {
+            visibility: visible;
+        }
+    </style>
+    <script>
+        /*$(window).scroll(function () {
+            var height = $(window).scrollTop();
 
-    if(height  > 100) {
-         $( "#testa" ).fadeOut("slow");
-    }if (height  < 100){
-        $( "#testa" ).fadeIn("slow");
-    }
-});
-      
-      $(document).ready(function() {
+            if (height > 100) {
+                $("#testa").fadeOut("slow");
+            }
+            if (height < 100) {
+                $("#testa").fadeIn("slow");
+            }
+        });*/
 
-    $('.punto1').waypoint(function() {
-        $('.wp1').addClass('animated fadeInLeft');
-    }, {
-        offset: '75%'
-    });
-    $('.wp2').waypoint(function() {
-        $('.wp2').addClass('animated fadeInLeft');
-    }, {
-        offset: '75%'
-    });
-    $('.wp3').waypoint(function() {
-        $('.wp3').addClass('animated fadeInRight');
-    }, {
-        offset: '55%'
-    });
-    $('.wp4').waypoint(function() {
-        $('.wp4').addClass('animated fadeInDown');
-    }, {
-        offset: '75%'
-    });
-    $('.wp5').waypoint(function() {
-        $('.wp5').addClass('animated fadeInUp');
-    }, {
-        offset: '75%'
-    });
-    $('.wp6').waypoint(function() {
-        $('.wp6').addClass('animated fadeInDown');
-    }, {
-        offset: '75%'
-    });
-    $('.wp7').waypoint(function() {
-        $('.wp7').addClass('animated fadeInDown');
-    }, {
-        offset: '80%'
-    });
-    $('.wp7').waypoint(function() {
-        $('.wp8').addClass('animated fadeInDown');
-    }, {
-        offset: '85%'
-    });
-          
-     $('.wp7').waypoint(function() {
-        $('.wp9').addClass('animated fadeInDown');
-    }, {
-        offset: '90%'
-    });
-          
-     $('.wp7').waypoint(function() {
-        $('.wp10').addClass('animated fadeInDown');
-    }, {
-        offset: '95%'
-    });
-          
-     $('.wp7').waypoint(function() {
-        $('.wp11').addClass('animated fadeInDown');
-    }, {
-        offset: '100%'
-    });
-    
+        $(document).ready(function () {
 
-});
-      
-      </script>
-      </head>
-      <body>
-<div class="contain-to-grid sticky">
+            $('.punto1').waypoint(function () {
+                $('.wp1').addClass('animated fadeInLeft');
+            }, {
+                offset: '75%'
+            });
+            $('.wp2').waypoint(function () {
+                $('.wp2').addClass('animated fadeInLeft');
+            }, {
+                offset: '75%'
+            });
+            $('.wp3').waypoint(function () {
+                $('.wp3').addClass('animated fadeInRight');
+            }, {
+                offset: '55%'
+            });
+            $('.wp4').waypoint(function () {
+                $('.wp4').addClass('animated fadeInDown');
+            }, {
+                offset: '75%'
+            });
+            $('.wp5').waypoint(function () {
+                $('.wp5').addClass('animated fadeInUp');
+            }, {
+                offset: '75%'
+            });
+            $('.wp6').waypoint(function () {
+                $('.wp6').addClass('animated fadeInDown');
+            }, {
+                offset: '75%'
+            });
+            $('.wp7').waypoint(function () {
+                $('.wp7').addClass('animated fadeInDown');
+            }, {
+                offset: '80%'
+            });
+            $('.wp7').waypoint(function () {
+                $('.wp8').addClass('animated fadeInDown');
+            }, {
+                offset: '85%'
+            });
+
+            $('.wp7').waypoint(function () {
+                $('.wp9').addClass('animated fadeInDown');
+            }, {
+                offset: '90%'
+            });
+
+            $('.wp7').waypoint(function () {
+                $('.wp10').addClass('animated fadeInDown');
+            }, {
+                offset: '95%'
+            });
+
+            $('.wp7').waypoint(function () {
+                $('.wp11').addClass('animated fadeInDown');
+            }, {
+                offset: '100%'
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="contain-to-grid sticky">
         <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
-    <ul class="title-area">
-            <li class="name">
-        <h1 style="color:#fff">L'esilio Dimenticato</h1>
-      </li>
-            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-            
-          </ul>
-    <section class="top-bar-section"> 
-            <!-- Right Nav Section --> 
-            
-            <!-- Left Nav Section --> 
-            
-          </section>
-  </nav>
-      </div>
-<div class="header-intro">
-        <div class="small-4 columns"> <img id="testa" src="img/header01.jpg"> </div>
+            <ul class="title-area">
+                <li class="name">
+                    <h1 style="color:#fff">L'esilio Dimenticato</h1>
+                </li>
+                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+
+            </ul>
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+
+                <!-- Left Nav Section -->
+
+            </section>
+        </nav>
+    </div>
+    <div class="header-intro">
+        <div class="small-4 columns">
+            <img id="testa" src="img/header01.jpg">
+        </div>
         <div class="small-8 columns head">
-    <h1><small  class="blue">40 Years Of Saharawi Exile</small></h1>
-    <h1>L'esilio Dimenticato</h1>
-    <hr>
-            <p class="introduction">Una crisi dimenticata, un conflitto sul punto di riesplodere, il 2015 per la popolazione Saharawi e il Sahara Occidentale può essere un anno cruciale<br /><br /></p>
-            
-    <h2><small>Testo, foto e video - Tomaso Clavarino</small></h2>
-    <h3><small>Design e Sviluppo - Isacco Chiaf</small></h3>
-    <h3><small>Illustrazioni - Norma Nardi</small></h3>
-  </div>
-      </div>
-<div class="header ">
-        <div class="row"> <br />
-    <br />
-    <br />
-    <div class="medium-8 medium-centered columns"> </div>
-  </div>
-      </div>
-<div class="header punto1"> <img src="img/pic_01.jpg"> </div>
-<div class="row" id="first-chapter"> <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="medium-8 medium-centered columns">
-<!--    <h3><small><em>Part I</em> - 40 Years Of Saharawi Exile</small></h3>-->
-    <h2>Un Esilio Senza Fine</h2>
+            <h1><small  class="blue">Quarant'anni di resistenza nel deserto</small></h1>
+            <h1>L'esilio Dimenticato</h1>
             <hr>
-    <p> Sapeva che la via diplomatica sarebbe stata ricca di insidie e ostacoli, ma sperava che l’impegno della comunità internazionale avrebbe potuto portare a dei risultati concreti, senza più spargimenti di sangue. <br />
-            Ma dal 1991, l’anno del cessate il fuoco voluto dalle Nazioni Unite per poter dare il là alla realizzazione di un referendum per l’indipendenza di questa parte di deserto, nulla, davvero nulla, è cambiato per la popolazione Saharawi. I figli di Bechir sono nati in quegli stessi campi profughi nei quali la sua generazione è stata costretta a fuggire. Tende, case di mattoni di sabbia, in una delle aree più inospitali di tutto il Maghreb. Nel sud dell’Algeria, tra Tindouf e il confine con la Mauritania. Un luogo che è un deserto piatto e pietroso, freddo d’inverno e soffocante d’estate, spesso sferzato da un forte vento che riempie gli occhi, la bocca e le case di sabbia. </p>
-  </div>
-      </div>
-<div class="row">
-        <div class="medium-8 medium-centered columns introduction wp2"> Qui, tra capre costrette a mangiare la plastica perché non hanno altro a disposizione e un tasso di disoccupazione che cresce di anno in anno, la popolazione Saharawi, composta da circa 170 mila persone, si trova ancora costretta a vivere senza un futuro, senza prospettive. </div>
-      </div>
-<div class="row"> <br />
-        <div class="medium-8 medium-centered columns"> <br />
-    <br />
-    <br />
-    <p> Il fallimento della comunità internazionale che in 23 anni non è riuscita, nonostante una missione, la Minurso (United Nations Mission for the Referendum in Western Sahara), creata appositamente per questo, a dare vita a un referendum, è sotto gli occhi di tutti. Anche dei Saharawi, che ora, a 40 anni dall’inizio del loro esilio, si chiedono se valga ancora la pena aspettare o se invece non sia il caso di imbracciare di nuovo i fucili per riprendersi quello che, a loro detta, gli appartiene. Ed ecco quindi che sono iniziate manovre militari nel deserto e ispezioni delle varie basi dell’Esercito di Liberazione Popolare Saharawi da parte dei vertici del governo del Fronte Polisario. </p>
-  </div>
-      </div>
-<!--Image Gallery--------------------------------->
+            <p class="introduction">Una popolazione relegata dal 1975 in campi profughi, un conflitto sul punto di riesplodere, la minaccia del terrorismo, il 2015 può essere un anno cruciale per il futuro del Sahara Occidentale
+                <br />
+                <br />
+            </p>
 
-<div class="gallery">
+            <h2><small>Testo, foto e video - Tomaso Clavarino</small></h2>
+            <h3><small>Design e Sviluppo - Isacco Chiaf</small></h3>
+            <h3><small>Illustrazioni - Norma Nardi</small></h3>
+        </div>
+    </div>
+    <div class="header ">
         <div class="row">
-    <div class="medium-10 medium-centered columns"> <br />
             <br />
             <br />
             <br />
-            <br />
-            <h3><small><em>Photogallery I</em> - 40 Years Of Saharawi Exile</small></h3>
-            <h2>Gli Saharawi</h2>
-            <ul class="example-orbit" data-orbit>
-        <li> <img src="img/gallery_01/01.jpg" alt="slide 1" />
-                <div class="orbit-caption"> Alcune donne in un improvvisato mercato nel campo profughi di Smara. </div>
-              </li>
-        <li class="active"> <img src="img/gallery_01/02.jpg" alt="slide 2" />
-                <div class="orbit-caption"> Cadetti dell'Esercito Popolare di Liberazione Saharawi durante l'inagurazione di una nuova scuola militare. </div>
-              </li>
-        <li> <img src="img/gallery_01/03.jpg" alt="slide 3" />
-                <div class="orbit-caption"> Donne durante una manifestazione pro indipendenza. </div>
-              </li>
-        <li> <img src="img/gallery_01/04.jpg" alt="slide 4" />
-                <div class="orbit-caption"> Donne manifestano per l'indipendenza del Sahara Occidentale. </div>
-              </li>
-        <li> <img src="img/gallery_01/05.jpg" alt="slide 5" />
-                <div class="orbit-caption"> Manovre militari dell'Esercito Popolare di Liberazione Saharawi. </div>
-              </li>
-        <li> <img src="img/gallery_01/06.jpg" alt="slide 6" />
-                <div class="orbit-caption"> Un militare dell EPLS. </div>
-              </li>
-        <li> <img src="img/gallery_01/07.jpg" alt="slide 7" />
-                <div class="orbit-caption"> Un soldato si riposa con il spalla la bandiera del Sahara Occidentale. </div>
-              </li>
-        <li> <img src="img/gallery_01/08.jpg" alt="slide 8" />
-                <div class="orbit-caption"> Un uomo vicino alla sua macchina rotta nel campo profughi di Rabouni. </div>
-              </li>
-        <li> <img src="img/gallery_01/09.jpg" alt="slide 9" />
-                <div class="orbit-caption"> Un villaggio nel mezzo del Sahara controllato dal Fronte Polisario. </div>
-              </li>
-        <li> <img src="img/gallery_01/10.jpg" alt="slide 10" />
-                <div class="orbit-caption"> Una donna durante una manifestazione pro indipendenza. </div>
-              </li>
-        <li> <img src="img/gallery_01/11.jpg" alt="slide 11" />
-                <div class="orbit-caption"> Uno dei pochi negozi nel campo profughi 27 Febbraio. </div>
-              </li>
-      </ul>
-          </div>
-  </div>
-      </div>
-<div class="row">
-        <div class="medium-8 medium-centered columns">
-    <p> <br />
-            <br />
-            <br />
-            Mohammed Lamin Elbouhali, ministro della Difesa della Repubblica Araba Saharawi Democratica (Rasd) non usa mezzi termini per spiegare il pensiero del Fronte Polisario, il braccio politico della popolazione Saharawi, sulla questione: «Non possiamo e non vogliamo più aspettare, la nostra pazienza è finita. Abbiamo accettato le condizioni poste dalla comunità internazionale, abbiamo acconsentito al dialogo, ma non è servito a nulla. Il Marocco continua a provocare e a non accettare neppure di discutere della base elettorale per questo referendum nel quale oramai nessuno crede più. Noi siamo pronti a riprendere le armi per riconquistare la nostra terra». <br />
-            L’insofferenza e l’impazienza la si respira girando tra i campi profughi. La si respira a Smara, a Rabouni ad Auserd, la si respira parlando con gli anziani che hanno partecipato alla sanguinosa guerra contro Rabat, ma la si respira anche confrontandosi con quei giovani che la loro Patria non l’hanno mai vista ma che sono consapevoli del fatto che in questi campi, per loro, non c’è alcuna prospettiva.</p>
-  </div>
+            <div class="medium-8 medium-centered columns"></div>
+        </div>
+    </div>
+    <div class="header punto1">
+        <img src="img/pic_01.jpg">
+    </div>
+    <div class="row" id="first-chapter">
         <br />
-        <br />
-        <br />
-        <br />
-      </div>
-<div class="header"> <img src="img/break_02.jpg"> </div>
-<div class="row"> <br />
         <br />
         <br />
         <br />
         <br />
         <div class="medium-8 medium-centered columns">
-<!--    <h3><small><em>Part II</em> - 40 Years Of Saharawi Exile</small></h3>-->
-    <h2>Il crollo degli aiuti umanitari</h2>
+            <!--    <h3><small><em>Part I</em> - 40 Years Of Saharawi Exile</small></h3>-->
+            <h2>Un Esilio Senza Fine</h2>
             <hr>
-    <p> La popolazione Saharawi dipende oramai da decenni esclusivamente dagli aiuti umanitari. Cibo, medicine, vestiti, tutto giunge fin qui nei campi con container provenienti dai quattro angoli del mondo. Ma vuoi per la crisi economica che ha colpito l’Occidente negli ultimi anni, vuoi per l’esplosione di focolai di guerra e quindi di situazioni di emergenza in altre regioni, vuoi per il fatto che questa crisi, la crisi del Sahara Occidentale e della popolazione Saharawi, si protrae da quattro decenni, gli aiuti umanitari negli ultimi anni sono crollati. <br />
+            <p>Sapeva che la via diplomatica sarebbe stata ricca di insidie e ostacoli, ma sperava che l’impegno della comunità internazionale avrebbe potuto portare a dei risultati concreti, senza più spargimenti di sangue.
+                <br />Ma dal 1991, l’anno del cessate il fuoco voluto dalle Nazioni Unite per poter dare il là alla realizzazione di un referendum per l’indipendenza di questa parte di deserto, nulla, davvero nulla, è cambiato per la popolazione Saharawi. I figli di Bechir sono nati in quegli stessi campi profughi nei quali la sua generazione è stata costretta a fuggire. Tende, case di mattoni di sabbia, in una delle aree più inospitali di tutto il Maghreb. Nel sud dell’Algeria, tra Tindouf e il confine con la Mauritania. Un luogo che è un deserto piatto e pietroso, freddo d’inverno e soffocante d’estate, spesso sferzato da un forte vento che riempie gli occhi, la bocca e le case di sabbia.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-8 medium-centered columns introduction wp2">Qui, tra capre costrette a mangiare la plastica perché non hanno altro a disposizione e un tasso di disoccupazione che cresce di anno in anno, la popolazione Saharawi, composta da circa 170 mila persone, si trova ancora costretta a vivere senza un futuro, senza prospettive.</div>
+    </div>
+    <div class="row">
+        <br />
+        <div class="medium-8 medium-centered columns">
             <br />
-          </p>
-  </div>
-      </div>
+            <br />
+            <br />
+            <p>Il fallimento della comunità internazionale che in 23 anni non è riuscita, nonostante una missione, la Minurso (United Nations Mission for the Referendum in Western Sahara), creata appositamente per questo, a dare vita a un referendum, è sotto gli occhi di tutti. Anche dei Saharawi, che ora, a 40 anni dall’inizio del loro esilio, si chiedono se valga ancora la pena aspettare o se invece non sia il caso di imbracciare di nuovo i fucili per riprendersi quello che, a loro detta, gli appartiene. Ed ecco quindi che sono iniziate manovre militari nel deserto e ispezioni delle varie basi dell’Esercito di Liberazione Popolare Saharawi da parte dei vertici del governo del Fronte Polisario.</p>
+        </div>
+    </div>
+    <!--Image Gallery--------------------------------->
 
-<!------------------------------------------------------------  video   -->
-                    
-                          
-            <div class="row">
-                <div class="medium-9 medium-centered columns">
-      
-                     <video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" 
-  data-setup='{}' poster="img/poster_vid_02.jpg" >
-                        <source src="video/vid-01-campi.mp4" type='video/mp4'>
-                        <source src="video/vid-01-campi.webm" type='video/webm'>
-    
-                         
-                    </video>
-                    </div>
+    <div class="gallery">
+        <div class="row">
+            <div class="medium-10 medium-centered columns">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <!--            <h3><small><em>Photogallery I</em> - 40 Years Of Saharawi Exile</small></h3>-->
+                <h2>Sognando una Nazione</h2>
+                <ul class="example-orbit" data-orbit>
+                    <li>
+                        <img src="img/gallery_01/01.jpg" alt="slide 1" />
+                        <div class="orbit-caption">Alcune donne in un improvvisato mercato nel campo profughi di Smara.</div>
+                    </li>
+                    <li class="active">
+                        <img src="img/gallery_01/02.jpg" alt="slide 2" />
+                        <div class="orbit-caption">Cadetti dell'Esercito Popolare di Liberazione Saharawi durante l'inagurazione di una nuova scuola militare.</div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_01/03.jpg" alt="slide 3" />
+                        <div class="orbit-caption">Donne durante una manifestazione pro indipendenza</div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_01/04.jpg" alt="slide 4" />
+                        <div class="orbit-caption">Donne manifestano per l'indipendenza del Sahara Occidentale</div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_01/05.jpg" alt="slide 5" />
+                        <div class="orbit-caption">Manovre militari dell'Esercito Popolare di Liberazione Saharawi</div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_01/06.jpg" alt="slide 6" />
+                        <div class="orbit-caption">Un militare dell EPLS</div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_01/07.jpg" alt="slide 7" />
+                        <div class="orbit-caption">Un soldato si riposa con in spalla la bandiera del Sahara Occidentale</div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_01/08.jpg" alt="slide 8" />
+                        <div class="orbit-caption">Un uomo vicino alla sua macchina rotta nel campo profughi di Rabouni</div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_01/09.jpg" alt="slide 9" />
+                        <div class="orbit-caption">Un villaggio nel mezzo del Sahara controllato dal Fronte Polisario</div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_01/10.jpg" alt="slide 10" />
+                        <div class="orbit-caption">Una donna manifesta in sostegno del Fronte Polisario</div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_01/11.jpg" alt="slide 11" />
+                        <div class="orbit-caption">Uno dei pochi negozi nel campo profughi 27 Febbraio</div>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-8 medium-centered columns">
+            <p>
+                <br />
+                <br />
+                <br />Mohammed Lamin Elbouhali, ministro della Difesa della Repubblica Araba Saharawi Democratica (Rasd) non usa mezzi termini per spiegare il pensiero del Fronte Polisario, il braccio politico della popolazione Saharawi, sulla questione: «Non possiamo e non vogliamo più aspettare, la nostra pazienza è finita. Abbiamo accettato le condizioni poste dalla comunità internazionale, abbiamo acconsentito al dialogo, ma non è servito a nulla. Il Marocco continua a provocare e a non accettare neppure di discutere della base elettorale per questo referendum nel quale oramai nessuno crede più. Noi siamo pronti a riprendere le armi per riconquistare la nostra terra».
+                <br />L’insofferenza e l’impazienza la si respira girando tra i campi profughi. La si respira a Smara, a Rabouni ad Auserd, la si respira parlando con gli anziani che hanno partecipato alla sanguinosa guerra contro Rabat, ma la si respira anche confrontandosi con quei giovani che la loro Patria non l’hanno mai vista ma che sono consapevoli del fatto che in questi campi, per loro, non c’è alcuna prospettiva.</p>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <div class="header">
+        <img src="img/break_02.jpg">
+    </div>
+    <div class="row">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="medium-8 medium-centered columns">
+            <!--    <h3><small><em>Part II</em> - 40 Years Of Saharawi Exile</small></h3>-->
+            <h2>Il crollo degli aiuti umanitari</h2>
+            <hr>
+            <p>La popolazione Saharawi dipende oramai da decenni esclusivamente dagli aiuti umanitari. Cibo, medicine, vestiti, tutto giunge fin qui nei campi con container provenienti dai quattro angoli del mondo. Ma vuoi per la crisi economica che ha colpito l’Occidente negli ultimi anni, vuoi per l’esplosione di focolai di guerra e quindi di situazioni di emergenza in altre regioni, vuoi per il fatto che questa crisi, la crisi del Sahara Occidentale e della popolazione Saharawi, si protrae da quattro decenni, gli aiuti umanitari negli ultimi anni sono crollati.
+                <br />
+                <br />
+            </p>
+        </div>
+    </div>
 
-                    
-     <!------------------------------------------------------------  video   -->
-        
-        <div class="row">
-            <br /><br />                
-            <div class="medium-8 medium-centered columns">
-                                <p>
-                                   <br />
-«Negli ultimi quattro anni le donazioni e l’impegno della comunità internazionale si sono ridotti di molto – racconta Brahim Mojtar, ministro della Cooperazione  - Possiamo anzi dire che sono crollati vertiginosamente. Questo ovviamente per una popolazione come quella Saharawi è un danno enorme perché dipendiamo in tutto e per tutto dagli aiuti umanitari. Basterebbero 8 milioni di euro all’anno per sfamare tutti, una cifra irrisoria che però facciamo fatica a racimolare. Ma il vero rischio per noi non è morire di fame, il vero rischio per noi è finire nel dimenticatoio. Una crisi così lunga, un conflitto che si protrae per così tanto tempo, porta inevitabilmente a un minore interesse della comunità internazionale nei confronti della nostra causa e delle nostre sofferenze, e questo è proprio quello che vuole il Marocco. Ed è per questo che noi, come Fronte Polisario e come saharawi, non possiamo più rischiare di aspettare invano e continuare a non vedere i nostri amici e i nostri parenti  che vivono nei territori occupati al di là del muro marocchino».
+    <!------------------------------------------------------------  video   -->
 
 
-</p>
-           </div>
-      </div>    
-      
-     
-      
-      
-  
+    <div class="row">
+        <div class="medium-9 medium-centered columns">
 
-       
-      
-                    <!-------------------Chapter 02---------------------------------------------------->
-    
-      
-      
-      <!--
+            <video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" data-setup='{}' poster="img/poster_vid_02.jpg">
+                <source src="video/vid-01-campi.mp4" type='video/mp4'>
+                    <source src="video/vid-01-campi.webm" type='video/webm'>
+
+
+            </video>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------  video   -->
+
+    <div class="row">
+        <br />
+        <br />
+        <div class="medium-8 medium-centered columns">
+            <p>
+                <br />«Negli ultimi quattro anni le donazioni e l’impegno della comunità internazionale si sono ridotti di molto – racconta Brahim Mojtar, ministro della Cooperazione - Possiamo anzi dire che sono crollati vertiginosamente. Questo ovviamente per una popolazione come quella Saharawi è un danno enorme perché dipendiamo in tutto e per tutto dagli aiuti umanitari. Basterebbero 8 milioni di euro all’anno per sfamare tutti, una cifra irrisoria che però facciamo fatica a racimolare. Ma il vero rischio per noi non è morire di fame, il vero rischio per noi è finire nel dimenticatoio. Una crisi così lunga, un conflitto che si protrae per così tanto tempo, porta inevitabilmente a un minore interesse della comunità internazionale nei confronti della nostra causa e delle nostre sofferenze, e questo è proprio quello che vuole il Marocco. Ed è per questo che noi, come Fronte Polisario e come saharawi, non possiamo più rischiare di aspettare invano e continuare a non vedere i nostri amici e i nostri parenti che vivono nei territori occupati al di là del muro marocchino».
+
+
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-------------------Chapter 02---------------------------------------------------->
+
+
+
+    <!--
         <div class="header">
                 <img src="img/wall.jpg">         
             </div>-->
 
-        <div class="row">
-           <div class="medium-8 medium-centered columns">
-               <br /><br /><br /><br /><br /><br /><br /><br />
-                 
-              <h2>Il Muro Della Vergogna</h2>
-               <hr>
-                    <p>
-Duemilasettecento chilometri di terra, sabbia e filo spinato, dal confine algerino a quello mauritano. Da un lato il territori “liberati” controllati dal Fronte Polisario, dall’altro quelli “occupati” sotto il regno di Mohammed VI. Da un lato deserto, qualche sporadico villaggio, tende di nomadi, e nulla più, dall’altro ricchi giacimenti di fosfato,  acque tra le più pescose del pianeta e petrolio, tanto è vero che la società petrolifera statunitense Kosmos inizierà a breve a trivellare in mare aperto. In mezzo una lingua di terra tra le più minate al mondo, che ha già fatto 2.500 vittime, tra militari e civili. Secondo alcune stime il numero delle mine antiuomo e anticarro presenti nei pressi del muro dal lato controllato dal Fronte Polisario si aggirerebbe tra i 7 e i 10 milioni. </p>
-           </div>
-      </div>    
-        
-        <div class="header show-for-small-only">
-        
-            <img src="img/wall-small.jpg">
+    <div class="row">
+        <div class="medium-8 medium-centered columns">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <h2>Il Muro Della Vergogna</h2>
+            <hr>
+            <p>
+                Duemilasettecento chilometri di terra, sabbia e filo spinato, dal confine algerino a quello mauritano. Da un lato il territori “liberati” controllati dal Fronte Polisario, dall’altro quelli “occupati” sotto il regno di Mohammed VI. Da un lato deserto, qualche sporadico villaggio, tende di nomadi, e nulla più, dall’altro ricchi giacimenti di fosfato, acque tra le più pescose del pianeta e petrolio, tanto è vero che la società petrolifera statunitense Kosmos inizierà a breve a trivellare in mare aperto. In mezzo una lingua di terra tra le più minate al mondo, che ha già fatto 2.500 vittime, tra militari e civili. Secondo alcune stime il numero delle mine antiuomo e anticarro presenti nei pressi del muro dal lato controllato dal Fronte Polisario si aggirerebbe tra i 7 e i 10 milioni.
+            <br /><br /><br />
+            </p>
         </div>
-        
-        <div class="header show-for-medium-only">
-        
-            <img src="img/wall-medium.jpg">
+    </div>
+    <div class="row">
+         <div class="medium-8 medium-centered columns">
+                <h4>I Muri</h4>
+             <hr>
+             <br /><br /><br />
         </div>
-        
-         <div class="row show-for-large-only">
-             <h2 class="centered">I Muri</h2 >
+    </div>
+
+    <div class="header show-for-small-only">
+
+        <img src="img/wall-small.jpg">
+    </div>
+
+    <div class="header show-for-medium-only">
+
+        <img src="img/wall-medium.jpg">
+    </div>
+
+    <div class="row show-for-large-only">
+            
              
              <div class="medium-2 columns wp6">
             <img src="img/wall_01.jpg">
@@ -362,207 +423,261 @@ Duemilasettecento chilometri di terra, sabbia e filo spinato, dal confine algeri
             </div>
          <div class="row">
            <div class="medium-8 medium-centered columns didascalia">
-               La timeline della costruzione dei sei muri da parte del governo Marocchino, che dividono le aree della comunità Saharawi da quelle occupate. Sotto il grafico rappresentante lo sminamento delle aree circostanti al muro. Nel 2009 e 2010 non son stati collezionati dati.
-               <hr>
+               La timeline della costruzione dei sei muri da parte del governo Marocchino, che dividono le aree della comunità Saharawi da quelle sotto il controllo di Rabat.
+               <br /><br /><br />
+              
+               
+               
                </div>
             </div>
         
         <div class="row">
              <div class="medium-8 medium-centered columns">
-                   <h2 class="centered">Le Mine Antiuomo</h2>
-             <img class="show-for-medium-up" src="img/landmines_graph.jpg">
-                 <img class="show-for-small-only" src="img/landmines_graph_small.jpg">
-                 </div>
-            </div>
-         
-                   <div class="row">
-             <br /><br /><br />
-                    <div class="medium-9 medium-centered columns">
-                          <video id="my_video_3" class="video-js vjs-default-skin" controls preload="none" 
-      data-setup='{ "asdf": true }' poster="img/poster_vid_03.jpg" >           
-                            <source src="video/vid-04-ghetto.mp4" type='video/mp4'>
-                            <source src="video/vid-04-ghetto.webm" type='video/webm'>
-
-                            </video>  
-                        </div>
-                </div> 
-    
-        
-         <div class="row">
-           <div class="medium-8 medium-centered columns">
-               <br /><br /><br /><br /><br /><br /><br /><br />
-                    <p>
-Secondo alcune stime il numero delle mine antiuomo e anticarro presenti nei pressi del muro dal lato controllato dal Fronte Polisario si aggirerebbe tra i 7 e i 10 milioni. Tra queste, migliaia di ordigni inesplosi e cluster bombs che ogni anno feriscono, e uccidono, decine di persone, per lo più nomadi che in quelle aree portano a pascolare i loro greggi, e bambini che scambiano gli ordigni per giocattoli. 
-«Stavo facendo pascolare le capre, nella zona vicino al muro, non lontano da Mehaires, aveva piovuto per cui mi ero spinto fino a lì perché in quella zona c’era più acqua. Ho poggiato il piede per terra, mi sono accorto che avevo pestato qualcosa ma non ho potuto fare nulla. E così ho perso una gamba» racconta Embarel Mohamed, nel suo negozio di alimentari nel campo profughi 27 Febbraio. Il conflitto tra Marocco e Fronte Polisario, seppur silenziato da un traballante cessate il fuoco, continua quindi a mietere vittime, nel silenzio dei media che paiono essersi dimenticati di una crisi nella quale l’intera comunità internazionale ha enormi responsabilità.  </p>
-               <br /><br /><br /><br />
-           </div>
-      </div>    
-        
-        </div>
-                 <!------------------------------------------------------------  video   -->
-                    
-            <div class="row">
-                <div class="medium-9 medium-centered columns">
-      
-                     <video id="my_video_2" class="video-js vjs-default-skin" controls preload="none" 
-  data-setup='{}' poster="img/poster_vid_01.jpg" >
-                            <source src="video/vid-02-mercato.mp4" type='video/mp4'>
-                            <source src="video/vid-02-mercato.webm" type='video/webm'>
-    
-                         
-                    </video>
-                    </div>
-            </div> 
-     <!------------------------------------------------------------  video   -->
-
-   
-        
-           <div class="row">
-           <div class="medium-8 medium-centered columns">
-               <br /><br /><br /><br /><br />
-                    <p>
-Nei territori “occupati”, quindi formalmente in territorio marocchino, la comunità Saharawi, che conta più di 300mila persone, vive sparsa tra le città di Layyoune, Dakhla, Smara, Boujdour, discriminata dalle istituzioni di Rabat e dalla popolazione marocchina. Le violenze nei confronti dei saharawi da parte delle forze di sicurezza del Marocco sono pressoché quotidiane. I saharawi che manifestano per strada per l’indipendenza del Sahara Occidentale, per le difficili condizioni di vita e la repressione vengono picchiati, arrestati, spesso torturati, e infine condannati dai tribunali militari a pene che arrivano fino all’ergastolo.«Stavo facendo pascolare le capre, nella zona vicino al muro, non lontano da Mehaires, aveva piovuto per cui mi ero spinto fino a lì perché in quella zona c’era più acqua. Ho poggiato il piede per terra, mi sono accorto che avevo pestato qualcosa ma non ho potuto fare nulla. E così ho perso una gamba» racconta Embarel Mohamed, nel suo negozio di alimentari nel campo profughi 27 Febbraio. Il conflitto tra Marocco e Fronte Polisario, seppur silenziato da un traballante cessate il fuoco, continua quindi a mietere vittime, nel silenzio dei media che paiono essersi dimenticati di una crisi nella quale l’intera comunità internazionale ha enormi responsabilità. 
- </p>
-           </div>
-               <br /><br /><br />
-      </div>    
-            <div class="row">
-           <div class="medium-8 medium-centered columns">
-               <img src="img/mutilato_landmines.jpg">
-               </div>
-                </div>
-            
-            
-            <div class="row">
-           <div class="medium-8 medium-centered columns">
-               <br /><br /><br /><br /><br />
-                    <p>
-Nei territori “occupati”, quindi formalmente in territorio marocchino, la comunità Saharawi, che conta più di 300mila persone, vive sparsa tra le città di Layyoune, Dakhla, Smara, Boujdour, discriminata dalle istituzioni di Rabat e dalla popolazione marocchina. Le violenze nei confronti dei saharawi da parte delle forze di sicurezza del Marocco sono pressoché quotidiane. I saharawi che manifestano per strada per l’indipendenza del Sahara Occidentale, per le difficili condizioni di vita e la repressione vengono picchiati, arrestati, spesso torturati, e infine condannati dai tribunali militari a pene che arrivano fino all’ergastolo.«Stavo facendo pascolare le capre, nella zona vicino al muro, non lontano da Mehaires, aveva piovuto per cui mi ero spinto fino a lì perché in quella zona c’era più acqua. Ho poggiato il piede per terra, mi sono accorto che avevo pestato qualcosa ma non ho potuto fare nulla. E così ho perso una gamba» racconta Embarel Mohamed, nel suo negozio di alimentari nel campo profughi 27 Febbraio. Il conflitto tra Marocco e Fronte Polisario, seppur silenziato da un traballante cessate il fuoco, continua quindi a mietere vittime, nel silenzio dei media che paiono essersi dimenticati di una crisi nella quale l’intera comunità internazionale ha enormi responsabilità. 
- </p>
-           </div>
-                <br /><br /><br />
-      </div>    
-    
-            <div class="row">
-                <div class="medium-9 medium-centered columns">
-                      <video id="my_video_4" class="video-js vjs-default-skin" controls preload="none" 
-              data-setup='{ "asdf": true }' poster="img/poster_vid_04.jpg" >           
-                          <source src="video/vid-04-ghetto.mp4" type='video/mp4'>
-                          <source src="video/vid-04-ghetto.webm" type='video/webm'>
-                      </video>
-                    <br /><br /><br />
-                </div>
-            </div>
-    
-        
-       
-      
-       <div class="header">
-                       
-                <img src="img/break_03.jpg">
-              
-           
-                          
-            </div>
-            
-              <div class="row">
-           <div class="medium-8 medium-centered columns">
-               <br /><br /><br /><br /><br /><br /><br /><br />
-<!--                 <h3><small><em>Part IV</em> - 40 Years Of Saharawi Exile</small></h3>-->
-              <h2>Una Nuova Sfida</h2>
-               <hr>
-                    <p>
-Solo sabbia, rocce, e il buio. E nulla più. Ed è in questo buio che di notte avvolge il Sahara Occidentale che, oltre alle vecchie macchine dell’ELPS, si muovono rapidamente contrabbandieri, trafficanti di droga e terroristi. Al Qaeda nel Maghreb Islamico (AQMI), il Movimento per l’unicità della Jihad nell’Africa dell’Ovest (MUJAO),  Ansar Eddine, sono solo alcune delle sigle che negli ultimi anni, con attentati e rapimenti, hanno incendiato questa fascia di Africa. Sfruttano queste distese di sabbia, queste terre di nessuno, per spostarsi lungo quella fascia sahariana che è diventata negli ultimi anni una delle regioni più instabili del pianeta. L’incontro con i jihadisti per la comunità saharawi è stato improvviso, scioccante. Una notte di ottobre 2011, una jeep, degli spari, e tre cooperanti, due spagnoli e un’italiana, Rossella Urru, che vengono rapiti e portati a tutta velocità oltre il confine con il Mali. Un rapimento che avrà un lieto fine (i tre sono stati liberati dopo 9 mesi di prigionia) ma che rappresenta uno spartiacque importante in questa terra arida e già ferita da anni di conflitto. 
-«Prima del rapimento dei tre cooperanti pensavamo che il fenomeno del terrorismo islamico non ci avrebbe toccato – racconta il comandante della quinta regione militare Sidi Augal – Abbiamo sempre avuto un solo nemico: il Marocco. Ma ora dobbiamo combattere su due fronti: per riprenderci la nostra terra illegalmente occupata da Rabat e per fermare la minaccia rappresentata dai terroristi». Terroristi che in quest’area dove la povertà e la disoccupazione vanno di pari passo con il disinteresse della comunità internazionale trovano un brodo di coltura ideale per far crescere e propagare le loro idee.
-Il Fronte Polisario e l’Esercito di Liberazione Popolare Saharawi sanno che quella terrorista è una minaccia non solo per l’intera regione ma anche per la stabilità di una comunità che vive in estrema difficoltà da quattro decenni. </p>
-           </div>
-      </div>    
-            
-            <!-------------------------------Image Gallery--------------------->
-    <div class="gallery">      
-    <div class="row">
-           <div class="medium-10 medium-centered columns">
-               <br /><br /><br /><br /><br />
-               <h3><small><em>Photogallery II</em> - 40 Years Of Saharawi Exile</small></h3>
-              <h2>Pattugliamenti Notturni</h2>
-            <ul class="example-orbit" data-orbit>
-  <li>
-    <img src="img/gallery_02/01.jpg" alt="slide 1" />
-    <div class="orbit-caption">
-      Gli uomini dell'ELPS pattugliano un'area che confina con Algeria e Mauritania, per lo più disabitata.
-    </div>
-  </li>
-  <li class="active">
-    <img src="img/gallery_02/02.jpg" alt="slide 2" />
-    <div class="orbit-caption">
-      Mezzi militari nel deserto vicino a Bir Lehlu.
-    </div>
-  </li>
-  <li>
-    <img src="img/gallery_02/03.jpg" alt="slide 3" />
-    <div class="orbit-caption">
-      Parata militare vicino a Tifariti.
-    </div>
-  </li>
-                    <li>
-    <img src="img/gallery_02/04.jpg" alt="slide 4" />
-    <div class="orbit-caption">
-      Pattugliamenti notturni antiterrorismo e contrabbando nel deserto del Sahara Occidentale.
-    </div>
-  </li>
-                    <li>
-    <img src="img/gallery_02/05.jpg" alt="slide 5" />
-    <div class="orbit-caption">
-      Tutte le notti i pickup escono nella sabbia e nel buio per controllare il deserto.
-    </div>
-  </li>
-                    <li>
-    <img src="img/gallery_02/06.jpg" alt="slide 6" />
-    <div class="orbit-caption">
-      Un combattente dell'ELPS dorme durante una tempesta di sabbia vicino a Tifariti.
-    </div>
-  </li>
-             
-</ul>
-</div>
-                </div>
-        </div>  
-            
-                <div class="row">
-          
-          <br /><br /> <br /><br /> <br />
-          
-          <div class="medium-8 medium-centered columns">
-             
-              <p>
-               «Il rischio è che i gruppi terroristi si infiltrino nei campi, nelle moschee, e facciano proselitismo, soprattutto tra i giovani, sempre più disillusi, che si chiedono quale possa essere il loro futuro, lontano dalla loro terra e lontano da parenti e amici che vivono nei territori occupati dal Marocco (circa 400mila persone ndr) – spiega Brahim Ahmed Mahmoud, sottosegretario alla Sicurezza del Fronte Polisario – I saharawi si trovano in mezzo a un vortice, in un’area esplosiva, e sono le uniche vittime di questa situazione. Facciamo del nostro meglio, con i mezzi a nostra disposizione, per controllare l’area e garantire la sicurezza, ma finché non potremmo riavere la nostra Patria, abbattere il muro marocchino che divide il Sahara Occidentale e riabbracciare i nostri fratelli che soffrono la repressione da parte delle forze di sicurezza di Rabat, tutto rimarrà più difficile».   
- </p>
-              </div>
-          </div>
-        
-            
-                <div class="row">
-               
-              <div class="medium-8 medium-centered columns introduction">
+                   <br />
                  
-                 Pattugliamenti diurni e notturni nel deserto, posti di blocco, check-point, scorte per i pochi occidentali che, nonostante gli inviti da parte dei vari governi ad abbandonare la regione, hanno deciso di continuare a lavorare nella regione, sono i mezzi a disposizione del Fronte Polisario per provare a mettere un freno all’avanzata del terrorismo in una regione dai confini porosi e dalle aride distese difficili da controllare. 
-                    
-                  </div>
-                    
+                   <h4>Le Mine Antiuomo</h4>
+                 <hr>
+                 <br /><br /><br />
+        <img class="show-for-medium-up" src="img/landmines_graph.jpg">
+        <img class="show-for-small-only" src="img/landmines_graph_small.jpg">
+    </div>
+    </div>
+     <div class="row">
+           <div class="medium-8 medium-centered columns didascalia">
+               
+               Sminamento delle aree circostanti al muro ogni anno suddiviso per paesi produttori delle mine rinvenute. Nel 2009 e 2010 non son stati collezionati dati.
+               <hr>
                </div>
-            
+            </div>
+
+    <div class="row">
+        <br />
+        <br />
+        <br />
+        <div class="medium-9 medium-centered columns">
+            <video id="my_video_3" class="video-js vjs-default-skin" controls preload="none" data-setup='{ "asdf": true }' poster="img/poster_vid_03.jpg">
+                <source src="video/vid-04-ghetto.mp4" type='video/mp4'>
+                    <source src="video/vid-04-ghetto.webm" type='video/webm'>
+
+            </video>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="medium-8 medium-centered columns">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <p>
+                Secondo alcune stime il numero delle mine antiuomo e anticarro presenti nei pressi del muro dal lato controllato dal Fronte Polisario si aggirerebbe tra i 7 e i 10 milioni. Tra queste, migliaia di ordigni inesplosi e cluster bombs che ogni anno feriscono, e uccidono, decine di persone, per lo più nomadi che in quelle aree portano a pascolare i loro greggi, e bambini che scambiano gli ordigni per giocattoli. «Stavo facendo pascolare le capre, nella zona vicino al muro, non lontano da Mehaires, aveva piovuto per cui mi ero spinto fino a lì perché in quella zona c’era più acqua. Ho poggiato il piede per terra, mi sono accorto che avevo pestato qualcosa ma non ho potuto fare nulla. E così ho perso una gamba» racconta Embarel Mohamed, nel suo negozio di alimentari nel campo profughi 27 Febbraio. Il conflitto tra Marocco e Fronte Polisario, seppur silenziato da un traballante cessate il fuoco, continua quindi a mietere vittime, nel silenzio dei media che paiono essersi dimenticati di una crisi nella quale l’intera comunità internazionale ha enormi responsabilità.</p>
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+
+    </div>
+    <!------------------------------------------------------------  video   -->
+
+    <div class="row">
+        <div class="medium-9 medium-centered columns">
+
+            <video id="my_video_2" class="video-js vjs-default-skin" controls preload="none" data-setup='{}' poster="img/poster_vid_01.jpg">
+                <source src="video/vid-02-mercato.mp4" type='video/mp4'>
+                    <source src="video/vid-02-mercato.webm" type='video/webm'>
+
+
+            </video>
+        </div>
+    </div>
+    <!------------------------------------------------------------  video   -->
+
+
+
+    <div class="row">
+        <div class="medium-8 medium-centered columns">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <p>
+                Nei territori “occupati”, quindi formalmente in territorio marocchino, la comunità Saharawi, che conta più di 300mila persone, vive sparsa tra le città di Layyoune, Dakhla, Smara, Boujdour, discriminata dalle istituzioni di Rabat e dalla popolazione marocchina. Le violenze nei confronti dei saharawi da parte delle forze di sicurezza del Marocco sono pressoché quotidiane. I saharawi che manifestano per strada per l’indipendenza del Sahara Occidentale, per le difficili condizioni di vita e la repressione vengono picchiati, arrestati, spesso torturati, e infine condannati dai tribunali militari a pene che arrivano fino all’ergastolo.«Stavo facendo pascolare le capre, nella zona vicino al muro, non lontano da Mehaires, aveva piovuto per cui mi ero spinto fino a lì perché in quella zona c’era più acqua. Ho poggiato il piede per terra, mi sono accorto che avevo pestato qualcosa ma non ho potuto fare nulla. E così ho perso una gamba» racconta Embarel Mohamed, nel suo negozio di alimentari nel campo profughi 27 Febbraio. Il conflitto tra Marocco e Fronte Polisario, seppur silenziato da un traballante cessate il fuoco, continua quindi a mietere vittime, nel silenzio dei media che paiono essersi dimenticati di una crisi nella quale l’intera comunità internazionale ha enormi responsabilità.
+            </p>
+        </div>
+        <br />
+        <br />
+        <br />
+    </div>
+    <div class="row">
+        <div class="medium-8 medium-centered columns didascalia">
+            <img src="img/mutilato_landmines.jpg">
+
+            <br />
+            <br />Embarel Mohamed, commerciante, ha perso una gamba a causa di una mina antiuomo nel Sahara Occidentale
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="medium-8 medium-centered columns">
+            <br />
+            <br />
+            <br />
+            <br />
+            <p>
+                Nei territori “occupati”, quindi formalmente in territorio marocchino, la comunità Saharawi, che conta più di 300mila persone, vive sparsa tra le città di Layyoune, Dakhla, Smara, Boujdour, discriminata dalle istituzioni di Rabat e dalla popolazione marocchina. Le violenze nei confronti dei saharawi da parte delle forze di sicurezza del Marocco sono pressoché quotidiane. I saharawi che manifestano per strada per l’indipendenza del Sahara Occidentale, per le difficili condizioni di vita e la repressione vengono picchiati, arrestati, spesso torturati, e infine condannati dai tribunali militari a pene che arrivano fino all’ergastolo.«Stavo facendo pascolare le capre, nella zona vicino al muro, non lontano da Mehaires, aveva piovuto per cui mi ero spinto fino a lì perché in quella zona c’era più acqua. Ho poggiato il piede per terra, mi sono accorto che avevo pestato qualcosa ma non ho potuto fare nulla. E così ho perso una gamba» racconta Embarel Mohamed, nel suo negozio di alimentari nel campo profughi 27 Febbraio. Il conflitto tra Marocco e Fronte Polisario, seppur silenziato da un traballante cessate il fuoco, continua quindi a mietere vittime, nel silenzio dei media che paiono essersi dimenticati di una crisi nella quale l’intera comunità internazionale ha enormi responsabilità.
+            </p>
+        </div>
+        <br />
+        <br />
+        <br />
+    </div>
+
+    <div class="row">
+        <div class="medium-9 medium-centered columns">
+            <video id="my_video_4" class="video-js vjs-default-skin" controls preload="none" data-setup='{ "asdf": true }' poster="img/poster_vid_04.jpg">
+                <source src="video/vid-04-ghetto.mp4" type='video/mp4'>
+                    <source src="video/vid-04-ghetto.webm" type='video/webm'>
+            </video>
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+
+
+
+
+    <div class="header">
+
+        <img src="img/break_03.jpg">
+
+
+
+    </div>
+
+    <div class="row">
+        <div class="medium-8 medium-centered columns">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <!--                 <h3><small><em>Part IV</em> - 40 Years Of Saharawi Exile</small></h3>-->
+            <h2>Una Nuova Sfida</h2>
+            <hr>
+            <p>
+                Solo sabbia, rocce, e il buio. E nulla più. Ed è in questo buio che di notte avvolge il Sahara Occidentale che, oltre alle vecchie macchine dell’ELPS, si muovono rapidamente contrabbandieri, trafficanti di droga e terroristi. Al Qaeda nel Maghreb Islamico (AQMI), il Movimento per l’unicità della Jihad nell’Africa dell’Ovest (MUJAO), Ansar Eddine, sono solo alcune delle sigle che negli ultimi anni, con attentati e rapimenti, hanno incendiato questa fascia di Africa. Sfruttano queste distese di sabbia, queste terre di nessuno, per spostarsi lungo quella fascia sahariana che è diventata negli ultimi anni una delle regioni più instabili del pianeta. L’incontro con i jihadisti per la comunità saharawi è stato improvviso, scioccante. Una notte di ottobre 2011, una jeep, degli spari, e tre cooperanti, due spagnoli e un’italiana, Rossella Urru, che vengono rapiti e portati a tutta velocità oltre il confine con il Mali. Un rapimento che avrà un lieto fine (i tre sono stati liberati dopo 9 mesi di prigionia) ma che rappresenta uno spartiacque importante in questa terra arida e già ferita da anni di conflitto. «Prima del rapimento dei tre cooperanti pensavamo che il fenomeno del terrorismo islamico non ci avrebbe toccato – racconta il comandante della quinta regione militare Sidi Augal – Abbiamo sempre avuto un solo nemico: il Marocco. Ma ora dobbiamo combattere su due fronti: per riprenderci la nostra terra illegalmente occupata da Rabat e per fermare la minaccia rappresentata dai terroristi». Terroristi che in quest’area dove la povertà e la disoccupazione vanno di pari passo con il disinteresse della comunità internazionale trovano un brodo di coltura ideale per far crescere e propagare le loro idee. Il Fronte Polisario e l’Esercito di Liberazione Popolare Saharawi sanno che quella terrorista è una minaccia non solo per l’intera regione ma anche per la stabilità di una comunità che vive in estrema difficoltà da quattro decenni.</p>
+        </div>
+    </div>
+
+    <!-------------------------------Image Gallery--------------------->
+    <div class="gallery">
         <div class="row">
-          <br />
-          <div class="medium-8 medium-centered columns">
-                <br /><br /><br /> <p>Un terrorismo che ha toccato i saharawi nel profondo, perché nel gruppo dei rapitori dei tre cooperanti c’erano anche alcuni (sicuramente uno) di loro, cosa che ha spinto il Marocco ad accusare il Fronte Polisario di fiancheggiare i jihadisti. Accuse respinte al mittente, ma che hanno contribuito a rendere ancora più dubbiosa la comunità internazionale rispetto a un impegno in questa regione. Insomma, quarant’anni sono passati ma poco o nulla è cambiato per i saharawi. Nuove sfide si sommano a conflitti mai risolti, a tensione mai sopite. L’insofferenza dei giovani monta e la minaccia di una ripresa del conflitto armato contro il Marocco non sembra più essere solamente uno spauracchio utilizzato per attirare l’attenzione della comunità internazionale. 
-              
-                </p>
-              </div>
-    
-          </div>
-       
-      
-      <!------------------------------------------------------------  video 
+            <div class="medium-10 medium-centered columns">
+                <br />
+                <br />
+                <br />
+                
+<!--                <h3><small><em>Photogallery II</em> - 40 Years Of Saharawi Exile</small></h3>-->
+                <h2>Nel buio della notte</h2>
+                <ul class="example-orbit" data-orbit>
+                    <li>
+                        <img src="img/gallery_02/01.jpg" alt="slide 1" />
+                        <div class="orbit-caption">
+                            Gli uomini dell'ELPS pattugliano un'area che confina con Algeria e Mauritania, per lo più disabitata.
+                        </div>
+                    </li>
+                    <li class="active">
+                        <img src="img/gallery_02/02.jpg" alt="slide 2" />
+                        <div class="orbit-caption">
+                            Mezzi militari nel deserto vicino a Bir Lehlu.
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_02/03.jpg" alt="slide 3" />
+                        <div class="orbit-caption">
+                            Parata militare vicino a Tifariti.
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_02/04.jpg" alt="slide 4" />
+                        <div class="orbit-caption">
+                            Pattugliamenti notturni antiterrorismo e contrabbando nel deserto del Sahara Occidentale.
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_02/05.jpg" alt="slide 5" />
+                        <div class="orbit-caption">
+                            Tutte le notti i pickup escono nella sabbia e nel buio per controllare il deserto.
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/gallery_02/06.jpg" alt="slide 6" />
+                        <div class="orbit-caption">
+                            Un combattente dell'ELPS dorme durante una tempesta di sabbia vicino a Tifariti.
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="medium-8 medium-centered columns">
+
+            <p>
+                «Il rischio è che i gruppi terroristi si infiltrino nei campi, nelle moschee, e facciano proselitismo, soprattutto tra i giovani, sempre più disillusi, che si chiedono quale possa essere il loro futuro, lontano dalla loro terra e lontano da parenti e amici che vivono nei territori occupati dal Marocco (circa 400mila persone ndr) – spiega Brahim Ahmed Mahmoud, sottosegretario alla Sicurezza del Fronte Polisario – I saharawi si trovano in mezzo a un vortice, in un’area esplosiva, e sono le uniche vittime di questa situazione. Facciamo del nostro meglio, con i mezzi a nostra disposizione, per controllare l’area e garantire la sicurezza, ma finché non potremmo riavere la nostra Patria, abbattere il muro marocchino che divide il Sahara Occidentale e riabbracciare i nostri fratelli che soffrono la repressione da parte delle forze di sicurezza di Rabat, tutto rimarrà più difficile».
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="medium-8 medium-centered columns introduction">
+
+            Pattugliamenti diurni e notturni nel deserto, posti di blocco, check-point, scorte per i pochi occidentali che, nonostante gli inviti da parte dei vari governi ad abbandonare la regione, hanno deciso di continuare a lavorare nella regione, sono i mezzi a disposizione del Fronte Polisario per provare a mettere un freno all’avanzata del terrorismo in una regione dai confini porosi e dalle aride distese difficili da controllare.
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <br />
+        <div class="medium-8 medium-centered columns">
+            <br />
+            <br />
+            <br />
+            <p>Un terrorismo che ha toccato i saharawi nel profondo, perché nel gruppo dei rapitori dei tre cooperanti c’erano anche alcuni (sicuramente uno) di loro, cosa che ha spinto il Marocco ad accusare il Fronte Polisario di fiancheggiare i jihadisti. Accuse respinte al mittente, ma che hanno contribuito a rendere ancora più dubbiosa la comunità internazionale rispetto a un impegno in questa regione. Insomma, quarant’anni sono passati ma poco o nulla è cambiato per i saharawi. Nuove sfide si sommano a conflitti mai risolti, a tensione mai sopite. L’insofferenza dei giovani monta e la minaccia di una ripresa del conflitto armato contro il Marocco non sembra più essere solamente uno spauracchio utilizzato per attirare l’attenzione della comunità internazionale.
+
+            </p>
+        </div>
+
+    </div>
+
+
+    <!------------------------------------------------------------  video 
                     
                    
       <div class="row container-dalessio">
@@ -581,61 +696,67 @@ Il Fronte Polisario e l’Esercito di Liberazione Popolare Saharawi sanno che qu
           </video>
       </div> 
      <!------------------------------------------------------------  video   -->
-      
-     
-      <footer>
-          <div class="row">
-              <div class="medium-8 medium-centered columns">
-                  <br /> <br />
-                  
-                  
-                  <hr>
-                  </div>
-              
-                  <br /> <br />
-                  <div class="medium-12 medium-centered columns">
-                      <center>
-                    
-                          </center>
-                      <br /> <br />
-                  </div>
-              
-          </div>
-      </footer>
-      
-      <footer id="copyright-year">
-          <div class="row">
-              <div class="medium-8 medium-centered columns">
-                  <center><p style="color:#333;">© </p></center> 
-              </div>
-          </div>
-      </footer>
-      
-  
-      
-        
-<!-- __________________________________SCRIPTS_________________ -->
-   <script src="js/videoresize.js"></script>   
-<script src="js/foundation/foundation.js"></script>
-<script src="js/foundation/foundation.reveal.js"></script>
-<script src="js/foundation/foundation.orbit.js"></script>
-<script src="js/foundation/foundation.tab.js"></script>
-      <script src="js/foundation/foundation.tab.js"></script>
-       <script src="js/foundation/foundation.magellan.js"></script>
-       <script src="js/foundation/foundation.topbar.js"></script>
-      
-    <script>
-   $(document).foundation();
-        
-         $(document).ready(function () {
-    $('.thumbnails').simpleGal({
-      mainImage: '.custom'
-    });
-  });
-    </script>
-      
-            
 
-   
-  </body>
+
+    <footer>
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <br />
+                <br />
+
+
+                <hr>
+            </div>
+
+            <br />
+            <br />
+            <div class="medium-12 medium-centered columns">
+                <center>
+
+                </center>
+                <br />
+                <br />
+            </div>
+
+        </div>
+    </footer>
+
+    <footer id="copyright-year">
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <center>
+                    <p style="color:#333;">©</p>
+                </center>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- __________________________________SCRIPTS_________________ -->
+    <script src="js/videoresize.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script src="js/foundation/foundation.orbit.js"></script>
+    <script src="js/foundation/foundation.tab.js"></script>
+    <script src="js/foundation/foundation.tab.js"></script>
+    <script src="js/foundation/foundation.magellan.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
+
+    <script>
+        $(document).foundation();
+
+        $(document).ready(function () {
+            $('.thumbnails').simpleGal({
+                mainImage: '.custom'
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
 </html>
